@@ -1,0 +1,15 @@
+{
+  "name": "studyhub-fullstack",
+  "version": "1.0.0",
+  "description": "StudyHub – Student Notes & Resource Sharing Platform (FSD Mini Project)",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm run dev --prefix backend",
+    "client": "npm run dev --prefix frontend",
+    "seed": "npm run seed --prefix backend",
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
